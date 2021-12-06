@@ -35,6 +35,9 @@ public class Controller {
 
         this.session = sessionFactory.openSession();
     }
+    public void FinishSession(){
+        this.session.close();
+    }
 
     /**
      * Crea un nuevo mago
@@ -44,11 +47,20 @@ public class Controller {
      */
     public Daga createDaga(String nombre) throws SQLException{
         // @TODO complete este metodo para crear de forma presistente una daga
-
+        Daga daga = new Daga(nombre);
+        session.beginTransaction();
+        session.save(daga);
+        session.getTransaction().commit();
+        return daga;
     }
 
     public Mago createMago(String magician, Daga daga) throws SQLException {
         // @TODO complete este metodo para crear de forma presistente un mago
-
+        Mago mago = new Mago(magician, daga);
+        session.beginTransaction();
+        session.save(mago);
+        session.getTransaction().commit();
+        return mago;
     }
 }
+
