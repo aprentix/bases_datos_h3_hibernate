@@ -4,13 +4,13 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "daga")
+@Table(name = "baculo")
 public class Baculo {
     @Id
-    @Column(name = "daga_id")
+    @Column(name = "baculo_id")
     private Long id;
 
-    @Column(name = "daga_nombre")
+    @Column(name = "baculo_nombre")
     private String nombre;
 
     @Column(name = "peso")
