@@ -1,12 +1,10 @@
 package ormRPGgame.model;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
-@Table(name = "Mago")
-public class Mago {
+@Table(name = "Guerrero")
+public class Guerrero {
     @Id
     @OneToOne(cascade=CascadeType.ALL)
     @PrimaryKeyJoinColumn
@@ -18,11 +16,11 @@ public class Mago {
     @Column(name = "vida")
     private int vida;
 
-    public Mago(){
+    public Guerrero(){
 
     }
 
-    public Mago(String nombre, Daga daga){
+    public Guerrero(String nombre, Daga daga){
         // @TODO completar el constructor de la clase.
         //  Para ello es necesario un string con el nombre del mago y un objeto de la clase daga
         //  Inicialice el resto de atributos a los valores que considere oportunos

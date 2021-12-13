@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "daga")
-public class Daga {
+public class Espada {
     @Id
     @Column(name = "daga_id")
     private Long id;
@@ -15,11 +15,11 @@ public class Daga {
     @Column(name = "peso")
     private int peso;
 
-    public Daga() {
+    public Espada() {
 
     }
 
-    public Daga(Long id, String nombre, int peso) {
+    public Espada(Long id, String nombre, int peso) {
         this.id = id;
         this.nombre = nombre;
         this.peso = peso;
