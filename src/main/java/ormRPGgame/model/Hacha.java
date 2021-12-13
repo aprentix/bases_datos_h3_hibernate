@@ -3,13 +3,13 @@ package ormRPGgame.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "daga")
+@Table(name = "Hacha")
 public class Hacha {
     @Id
-    @Column(name = "daga_id")
+    @Column(name = "hacha_id")
     private Long id;
 
-    @Column(name = "daga_nombre")
+    @Column(name = "hacha_nombre")
     private String nombre;
 
     @Column(name = "peso")
