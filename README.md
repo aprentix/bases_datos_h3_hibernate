@@ -17,3 +17,18 @@ https://github.com/bbddetsisi/practica-dragones-y-cabernas-hito3-hibernate
 
 *ETSI de Sistemas Informáticos | Universidad Politécnica de Madrid*
 
+
+# Pasos para la instalación de Hibernate en Intellij
+
+
+1. Crear una cuenta de estudiante en Intellij https://www.jetbrains.com/es-es/community/education/#students solicitando la licencia gratuíta para estudiantes. 
+
+
+3. Te dan un código de activación de los productos.
+
+
+5. Te descargas la version Intellij https://www.jetbrains.com/es-es/idea/download/#section=windows versión ultimate.
+
+
+7. Configuras Intellij con el código y listo, ya puedes usar hibernate!!!
+
